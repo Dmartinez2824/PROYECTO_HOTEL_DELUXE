@@ -1,0 +1,33 @@
+#login {
+    background-color: var(--color-complemento);
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#login h2 {
+    color: var(--color-principal);
+    margin-bottom: 1rem;
+}
+
+#login input, #login button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#login button {
+    background-color: var(--color-secundario);
+    color: var(--color-complemento);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#login button:hover {
+    background-color: var(--color-resaltado);
+}

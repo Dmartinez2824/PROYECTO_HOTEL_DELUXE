@@ -1,0 +1,35 @@
+header {
+    background-color: var(--color-principal);
+    color: var(--color-complemento);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 0.8rem; /* Separación entre logo y título */
+    font-size: 1.5rem;
+}
+
+.logo {
+    width: 50px; /* Ajusta según el tamaño que necesites */
+    height: auto;
+    border-radius: 5px; /* Opcional, para bordes suaves */
+}
+
+header nav a {
+    color: var(--color-complemento);
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: var(--color-resaltado);
+}
