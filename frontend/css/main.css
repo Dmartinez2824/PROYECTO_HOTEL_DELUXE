@@ -1,0 +1,30 @@
+/* Colores de la paleta */
+:root {
+    --color-principal: #0D1B2A;
+    --color-secundario: #E0A106;
+    --color-complemento: #F8F9FA;
+    --color-texto: #212529;
+    --color-resaltado: #FFD700;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-complemento);
+    color: var(--color-texto);
+}
+
+section {
+    display: none; /* Solo se muestra la sección activa */
+}
+
+/* Mostrar sección activa */
+section.active {
+    display: block;
+}

@@ -1,0 +1,108 @@
+/* Contenedor principal */
+#reservas-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+#reservas-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+#reservas-wrapper h3 {
+  margin: 30px 0 15px;
+  color: #003366;
+}
+
+/* Formulario */
+.reserva-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reserva-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.reserva-form select,
+.reserva-form input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.reserva-form button {
+  background: #0066cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.reserva-form button:hover {
+  background: #004080;
+}
+
+/* Mensajes de validación */
+.msg {
+  font-size: 14px;
+  margin-top: -5px;
+  min-height: 18px;
+}
+
+/* Sección de destinos */
+.destinos {
+  margin-top: 40px;
+}
+
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Card de destino */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  color: #003366;
+}
+
+.card p {
+  padding: 0 10px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}

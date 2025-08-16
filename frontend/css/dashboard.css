@@ -1,0 +1,129 @@
+/* ---------- Dashboard pre-login ---------- */
+#dashboard {
+    padding: 3rem 2rem;
+    background-color: var(--color-complemento);
+    color: var(--color-texto);
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ---------- Bienvenida ---------- */
+.bienvenida {
+    padding: 1.8rem 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.bienvenida h2 {
+    color: var(--color-principal);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+.bienvenida p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ---------- Beneficios ---------- */
+.beneficios h3 {
+    text-align: center;
+    color: var(--color-principal);
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2.5rem;
+    text-align: center;
+}
+.beneficio {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.beneficio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+.beneficio img {
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.4s ease;
+}
+.beneficio:hover img {
+    transform: scale(1.05);
+}
+.beneficio h4 {
+    color: var(--color-principal);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.beneficio p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ---------- Tarjetas de habitaciones ---------- */
+.tarjetas-hoteles h3 {
+    text-align: center;
+    color: var(--color-principal);
+    margin: 3rem 0 2rem;
+    font-size: 1.8rem;
+}
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+.tarjeta {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.tarjeta:hover img {
+    transform: scale(1.05);
+}
+.tarjeta h4 {
+    margin: 1rem 0 0.5rem;
+    color: var(--color-principal);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.tarjeta p {
+    font-size: 0.95rem;
+    padding: 0 1rem 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+.tarjeta .precio {
+    display: block;
+    font-weight: bold;
+    margin: 0.8rem 0 1rem;
+    color: var(--color-secundario);
+    font-size: 1.1rem;
+}

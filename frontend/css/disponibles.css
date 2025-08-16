@@ -1,0 +1,194 @@
+/* =============================
+   Estilos Disponibles
+============================= */
+.disponibles-wrapper {
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.disponibles-wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.disponibles-wrapper p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* =============================
+   Grid de hoteles
+============================= */
+.hoteles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* =============================
+   Card de hotel
+============================= */
+.card.hotel {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.card.hotel:hover {
+  transform: scale(1.03);
+}
+
+.card.hotel img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card.hotel h4 {
+  margin: 12px 0 8px;
+  font-size: 20px;
+  color: #222;
+}
+
+.card.hotel p {
+  margin: 6px 12px;
+  color: #555;
+}
+
+.card.hotel .precio {
+  font-weight: bold;
+  color: #0a8d48;
+  margin: 10px 0;
+}
+
+/* =============================
+   Botones
+============================= */
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  margin-top: auto;
+}
+
+button {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-visualizar {
+  background: #0077cc;
+  color: #fff;
+}
+
+.btn-visualizar:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+.btn-reservar {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-reservar:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* Estado reservado */
+.btn-reservar.reservado {
+  background: #555;
+  color: #fff;
+  cursor: not-allowed;
+  animation: reservadoPulse 1s ease;
+}
+
+@keyframes reservadoPulse {
+  0% { transform: scale(1); background: #28a745; }
+  50% { transform: scale(1.1); background: #20c997; }
+  100% { transform: scale(1); background: #555; }
+}
+
+/* =============================
+   Modal
+============================= */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.modal-content h3 {
+  margin-bottom: 8px;
+}
+
+.modal-content p {
+  margin: 6px 0;
+  color: #444;
+}
+
+/* Botón cerrar modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Animaciones modal */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

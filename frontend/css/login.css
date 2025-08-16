@@ -1,0 +1,87 @@
+/* Contenedor principal centrado */
+#login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f6fa;
+    padding: 1rem;
+}
+
+/* Card con dos columnas */
+.login-card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Imagen lado izquierdo */
+.login-image {
+  background: url('https://images.unsplash.com/photo-1455587734955-081b22074882?q=80&w=1170&auto=format&fit=crop') no-repeat center center;
+  background-size: cover;
+}
+
+
+
+/* Formulario lado derecho */
+.login-form {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form h2 {
+    color: var(--color-principal);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.login-form input, 
+.login-form button {
+    width: 100%;
+    padding: 0.9rem;
+    margin: 0.6rem 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.login-form button {
+    background-color: var(--color-secundario);
+    color: var(--color-complemento);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: var(--color-resaltado);
+}
+
+.register-link {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: var(--color-principal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+.msg {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
